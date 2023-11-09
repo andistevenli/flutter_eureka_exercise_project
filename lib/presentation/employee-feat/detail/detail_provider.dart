@@ -1,5 +1,5 @@
 import 'package:employee_project/domain/model/employee_model.dart';
-import 'package:employee_project/presentation/employee-feat/detail-screen/detail_view_model.dart';
+import 'package:employee_project/presentation/employee-feat/detail/detail_view_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 Provider<DetailViewModel> detailViewModel = Provider<DetailViewModel>(

@@ -1,11 +1,11 @@
-import 'package:employee_project/presentation/employee-feat/detail-screen/detail-bloc/detail_bloc.dart';
-import 'package:employee_project/presentation/employee-feat/detail-screen/detail-bloc/detail_event.dart';
-import 'package:employee_project/presentation/employee-feat/detail-screen/detail-bloc/detail_state.dart';
+import 'package:employee_project/presentation/employee-feat/detail/detail-bloc/detail_bloc.dart';
+import 'package:employee_project/presentation/employee-feat/detail/detail-bloc/detail_event.dart';
+import 'package:employee_project/presentation/employee-feat/detail/detail-bloc/detail_state.dart';
 // import 'package:employee_project/presentation/detail/detail_provider.dart';
 // import 'package:employee_project/presentation/home/home-bloc/home_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../widgets-feat/color/my_color.dart';
+import '../../widgets/color/my_color.dart';
 // import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class DetailScreen extends StatefulWidget {

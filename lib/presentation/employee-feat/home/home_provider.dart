@@ -1,5 +1,5 @@
 import 'package:employee_project/domain/model/employee_model.dart';
-import 'package:employee_project/presentation/employee-feat/home-screen/home_view_model.dart';
+import 'package:employee_project/presentation/employee-feat/home/home_view_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 Provider<HomeViewModel> homeViewModel = Provider<HomeViewModel>(
