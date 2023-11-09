@@ -5,7 +5,7 @@ import 'package:employee_project/presentation/employee-feat/detail-screen/detail
 // import 'package:employee_project/presentation/home/home-bloc/home_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../utils/color/my_color.dart';
+import '../../widgets-feat/color/my_color.dart';
 // import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class DetailScreen extends StatefulWidget {

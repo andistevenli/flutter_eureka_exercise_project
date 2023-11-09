@@ -1,6 +1,6 @@
 import 'package:employee_project/utils/constant.dart';
 import 'package:employee_project/utils/key/navigator_key.dart';
-import 'package:employee_project/utils/typography/my_typography.dart';
+import 'package:employee_project/presentation/widgets-feat/typography/my_typography.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 

@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 // import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../utils/color/my_color.dart';
-import '../../../utils/typography/my_typography.dart';
+import '../../widgets-feat/color/my_color.dart';
+import '../../widgets-feat/typography/my_typography.dart';
 import '../detail-screen/detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
