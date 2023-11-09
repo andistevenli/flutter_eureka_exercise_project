@@ -1,14 +1,14 @@
-import 'package:employee_project/presentation/home/home-bloc/home_bloc.dart';
-import 'package:employee_project/presentation/home/home-bloc/home_event.dart';
-import 'package:employee_project/presentation/home/home-bloc/home_state.dart';
+import 'package:employee_project/presentation/employee-feat/home-screen/home-bloc/home_bloc.dart';
+import 'package:employee_project/presentation/employee-feat/home-screen/home-bloc/home_event.dart';
+import 'package:employee_project/presentation/employee-feat/home-screen/home-bloc/home_state.dart';
 // import 'package:employee_project/presentation/home/home_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 // import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../utils/color/my_color.dart';
-import '../../utils/typography/my_typography.dart';
-import '../detail/detail_screen.dart';
+import '../../../utils/color/my_color.dart';
+import '../../../utils/typography/my_typography.dart';
+import '../detail-screen/detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

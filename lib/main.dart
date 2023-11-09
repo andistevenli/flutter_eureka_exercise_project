@@ -1,8 +1,8 @@
 import 'package:employee_project/di/injector.dart';
-import 'package:employee_project/presentation/detail/detail-bloc/detail_bloc.dart';
-import 'package:employee_project/presentation/detail/detail_screen.dart';
-import 'package:employee_project/presentation/home/home-bloc/home_bloc.dart';
-import 'package:employee_project/presentation/home/home_screen.dart';
+import 'package:employee_project/presentation/employee-feat/detail-screen/detail-bloc/detail_bloc.dart';
+import 'package:employee_project/presentation/employee-feat/detail-screen/detail_screen.dart';
+import 'package:employee_project/presentation/employee-feat/home-screen/home-bloc/home_bloc.dart';
+import 'package:employee_project/presentation/employee-feat/home-screen/home_screen.dart';
 import 'package:employee_project/utils/key/navigator_key.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
