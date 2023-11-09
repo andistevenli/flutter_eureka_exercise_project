@@ -1,5 +1,5 @@
 import 'package:employee_project/presentation/widgets/color/my_color.dart';
-import 'package:employee_project/utils/constant.dart';
+import 'package:employee_project/utils/constant/constant_text.dart';
 import 'package:flutter/material.dart';
 
 class MyTypography extends StatelessWidget {

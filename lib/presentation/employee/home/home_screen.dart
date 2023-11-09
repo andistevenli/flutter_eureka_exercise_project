@@ -1,13 +1,13 @@
-import 'package:employee_project/presentation/employee-feat/home/home-bloc/home_bloc.dart';
-import 'package:employee_project/presentation/employee-feat/home/home-bloc/home_event.dart';
-import 'package:employee_project/presentation/employee-feat/home/home-bloc/home_state.dart';
+import 'package:employee_project/presentation/employee/home/home-bloc/home_bloc.dart';
+import 'package:employee_project/presentation/employee/home/home-bloc/home_event.dart';
+import 'package:employee_project/presentation/employee/home/home-bloc/home_state.dart';
+import 'package:employee_project/presentation/employee/widgets/employee_list_tile.dart';
 // import 'package:employee_project/presentation/home/home_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 // import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../widgets/color/my_color.dart';
-import '../../widgets/typography/my_typography.dart';
 import '../detail/detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -71,21 +71,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               } else {
                 return ListView.separated(
+                  physics: const BouncingScrollPhysics(),
                   itemBuilder: (context, index) {
-                    return ListTile(
-                      tileColor: MyColor.neutral,
-                      shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(12),
-                        ),
-                      ),
-                      title: MyTypography(
-                          title: true,
-                          text: state.employeeListState[index].title),
-                      subtitle: MyTypography(
-                        title: false,
-                        text: state.employeeListState[index].body,
-                      ),
+                    return EmployeeListTile(
+                      title: state.employeeListState[index].title,
+                      subtitle: state.employeeListState[index].body,
                       onTap: () => Navigator.pushNamed(
                         context,
                         DetailScreen.routeName,
@@ -101,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: double.infinity,
                     );
                   },
-                  itemCount: 100,
+                  itemCount: state.employeeListState.length,
                 );
               }
             } else {

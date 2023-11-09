@@ -1,6 +1,6 @@
-import 'package:employee_project/presentation/employee-feat/detail/detail-bloc/detail_bloc.dart';
-import 'package:employee_project/presentation/employee-feat/detail/detail-bloc/detail_event.dart';
-import 'package:employee_project/presentation/employee-feat/detail/detail-bloc/detail_state.dart';
+import 'package:employee_project/presentation/employee/detail/detail-bloc/detail_bloc.dart';
+import 'package:employee_project/presentation/employee/detail/detail-bloc/detail_event.dart';
+import 'package:employee_project/presentation/employee/detail/detail-bloc/detail_state.dart';
 // import 'package:employee_project/presentation/detail/detail_provider.dart';
 // import 'package:employee_project/presentation/home/home-bloc/home_state.dart';
 import 'package:flutter/material.dart';

@@ -1,4 +1,4 @@
-import 'package:employee_project/utils/constant.dart';
+import 'package:employee_project/utils/constant/constant_text.dart';
 import 'package:employee_project/utils/key/navigator_key.dart';
 import 'package:employee_project/presentation/widgets/typography/my_typography.dart';
 import 'package:flutter/material.dart';
