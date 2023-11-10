@@ -1,4 +1,4 @@
-import 'package:employee_project/data/repository/employee_repository_impl.dart';
+import 'package:employee_project/domain/repository/employee_repository_impl.dart';
 import 'package:employee_project/di/injector.dart';
 import 'package:employee_project/domain/model/employee_model.dart';
 import 'package:employee_project/domain/use_case/employee_usecase.dart';

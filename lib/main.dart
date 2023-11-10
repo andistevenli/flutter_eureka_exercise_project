@@ -6,16 +6,18 @@ import 'package:employee_project/presentation/employee/home/home_screen.dart';
 import 'package:employee_project/utils/key/navigator_key.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 // import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
   setup();
-  runApp(const MyEmployee());
-  // runApp(
-  //   const ProviderScope(
-  //     child: MyEmployee(),
-  //   ),
-  // );
+  // runApp(const MyEmployee());
+  // riverpod
+  runApp(
+    const ProviderScope(
+      child: MyEmployee(),
+    ),
+  );
 }
 
 class MyEmployee extends StatelessWidget {
@@ -23,25 +25,35 @@ class MyEmployee extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) => HomeBloc(),
-        ),
-        BlocProvider(
-          create: (context) => DetailBloc(),
-        ),
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: "My Employee",
-        navigatorKey: navigatorKey,
-        initialRoute: HomeScreen.routeName,
-        routes: {
-          HomeScreen.routeName: (context) => const HomeScreen(),
-          DetailScreen.routeName: (context) => const DetailScreen(),
-        },
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "My Employee",
+      navigatorKey: navigatorKey,
+      initialRoute: HomeScreen.routeName,
+      routes: {
+        HomeScreen.routeName: (context) => const HomeScreen(),
+        DetailScreen.routeName: (context) => const DetailScreen(),
+      },
     );
+    // return MultiBlocProvider(
+    //   providers: [
+    //     BlocProvider(
+    //       create: (context) => HomeBloc(),
+    //     ),
+    //     BlocProvider(
+    //       create: (context) => DetailBloc(),
+    //     ),
+    //   ],
+    //   child: MaterialApp(
+    //     debugShowCheckedModeBanner: false,
+    //     title: "My Employee",
+    //     navigatorKey: navigatorKey,
+    //     initialRoute: HomeScreen.routeName,
+    //     routes: {
+    //       HomeScreen.routeName: (context) => const HomeScreen(),
+    //       DetailScreen.routeName: (context) => const DetailScreen(),
+    //     },
+    //   ),
+    // );
   }
 }

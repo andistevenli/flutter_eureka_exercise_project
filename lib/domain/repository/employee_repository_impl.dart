@@ -2,7 +2,7 @@ import 'package:employee_project/data/source/remote/api/response/employee_respon
 import 'package:employee_project/data/source/remote/remote_data_source.dart';
 import 'package:employee_project/di/injector.dart';
 import 'package:employee_project/domain/model/employee_model.dart';
-import 'package:employee_project/domain/repository/employee_repository.dart';
+import 'package:employee_project/data/repository/employee_repository.dart';
 import 'package:employee_project/utils/data-mapper/employee_mapper.dart';
 
 class EmployeeRepositoryImpl implements IEmployeeRepository {
@@ -13,10 +13,12 @@ class EmployeeRepositoryImpl implements IEmployeeRepository {
     try {
       final List<EmployeeResponse> employeeResp =
           await inject<RemoteDataSource>().getAllEmployeeResponse();
+      //ga pake data mapper
       // final List<EmployeeModel> employeeModel = employeeResp
       //     .map((e) => EmployeeModel(
       //         userId: e.userId, id: e.id, title: e.title, body: e.body))
       //     .toList();
+      // pake mapper
       final List<EmployeeModel> employeeModel =
           employeeResp.map((e) => employeeMapper(e)).toList();
       return employeeModel;

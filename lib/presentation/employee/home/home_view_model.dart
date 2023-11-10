@@ -25,12 +25,12 @@ class HomeViewModel {
     //   throw (Exception(e));
     // }
     // riverpod
-    // return await inject<EmployeeInteractor>().getAllEmployeeModel();
+    return await inject<EmployeeInteractor>().getAllEmployeeModel();
     //bloc
-    try {
-      return await inject<EmployeeInteractor>().getAllEmployeeModel();
-    } catch (e) {
-      throw (Exception(e));
-    }
+    // try {
+    //   return await inject<EmployeeInteractor>().getAllEmployeeModel();
+    // } catch (e) {
+    //   throw (Exception(e));
+    // }
   }
 }

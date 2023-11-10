@@ -1,4 +1,4 @@
-import 'package:employee_project/data/repository/employee_repository_impl.dart';
+import 'package:employee_project/domain/repository/employee_repository_impl.dart';
 import 'package:employee_project/data/source/remote/api/service/employee_service.dart';
 import 'package:employee_project/data/source/remote/remote_data_source.dart';
 import 'package:employee_project/domain/use_case/employee_interactor.dart';

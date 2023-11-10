@@ -31,12 +31,12 @@ class DetailViewModel {
     //   throw Exception(e);
     // }
     // riverpod
-    // return await inject<EmployeeInteractor>().getEmployeeDetailModel(id);
+    return await inject<EmployeeInteractor>().getEmployeeDetailModel(id);
     //bloc
-    try {
-      return await inject<EmployeeInteractor>().getEmployeeDetailModel(id);
-    } catch (e) {
-      throw (Exception(e));
-    }
+    // try {
+    //   return await inject<EmployeeInteractor>().getEmployeeDetailModel(id);
+    // } catch (e) {
+    //   throw (Exception(e));
+    // }
   }
 }
